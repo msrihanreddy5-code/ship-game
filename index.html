@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cannon Strike – Difficulty Levels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚓ Cannon Strike – Hidden Fleet</h1>
+
+<h2>Select Difficulty</h2>
+<select id="difficultySelect">
+  <option value="easy">Easy</option>
+  <option value="medium">Medium</option>
+  <option value="hard">Hard</option>
+</select>
+
+<button id="startBtn">Start Game</button>
+<button id="restartBtn" style="display:none;">Restart</button>
+
+<div class="boards" style="display:none;" id="boardsSection">
+  
+  <div>
+    <h2>Your Board (Hide Ships)</h2>
+    <canvas id="playerBoard" width="300" height="300"></canvas>
+  </div>
+
+  <div>
+    <h2>Enemy Board (Fire Cannons)</h2>
+    <canvas id="enemyBoard" width="300" height="300"></canvas>
+  </div>
+
+</div>
+
+<h3 id="status"></h3>
+
+<script src="script.js"></script>
+</body>
+</html>
